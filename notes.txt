@@ -1,0 +1,20 @@
+==========================================================
+1.Create repository in GITHUB
+2.Clone it in Local
+3.Install package 
+        -- node js (By installing Node.js npm also installed as a part of it)
+        -- npm i npm -g
+        -- npm install -g angular-cli
+3.create new project
+        -- ng new <project-name>
+4.Project Structure
+5.
+
+Data Types
+1.string
+2.boolean
+3.number
+4.Object
+5.undefined
+6.null
+7.Array
