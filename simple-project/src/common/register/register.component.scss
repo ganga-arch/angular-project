@@ -1,7 +1,16 @@
-
 mat-card-title,
 mat-card-content {
   display: flex;
   justify-content: center;
 }
 
+.register-form {
+  height: 100%;
+  margin: 100px 0 0 50px;
+
+  .card-style {
+    width: 450px;
+    height: auto;
+    margin: auto;
+  }
+}

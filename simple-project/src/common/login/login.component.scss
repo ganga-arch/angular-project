@@ -5,3 +5,14 @@ mat-card-content {
   justify-content: center;
 }
 
+
+.login-form {
+  height: 100%;
+  margin: 200px 0 0 50px;
+
+  .card-style {
+    width: 450px;
+    height: auto;
+    margin: auto;
+  }
+}

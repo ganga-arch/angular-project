@@ -1,5 +1,5 @@
 import { trigger, transition, style, animate } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 
@@ -12,34 +12,32 @@ import { FormGroup, FormControl } from '@angular/forms';
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(100%)' }), 
         animate(
-          '750ms ease-in-out',
+          '300ms ease-in',
           style({ opacity: 1, transform: 'translateY(0%)' })
         ),
       ]),
       transition(':leave', [
-        style({ opacity: 1, transform: 'translateX(0)' }),
+        style({ opacity: 0, transform: 'translateX(0)' }),
         animate(
-          '600ms ease-in-out',
+          '300ms ease-out',
           style({ opacity: 0, transform: 'translateX(-100%)' })
         ),
       ]),
     ]),
   ],
 })
-export class RegisterComponent implements OnInit {
-  form: FormGroup = new FormGroup({
+export class RegisterComponent {
+  public registerForm: FormGroup = new FormGroup({
     username: new FormControl(''),
     password: new FormControl(''),
     email: new FormControl(''),
     confirmPassword: new FormControl(''),
   });
 
-  submit() {
-    if (this.form.valid) {
-      console.log(this.form.value);
+  public submit() {
+    if (this.registerForm.valid) {
+      // Code here
     }
   }
-  ngOnInit(): void {
-    
-  }
+
 }
