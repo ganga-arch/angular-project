@@ -1,0 +1,82 @@
+=====================================
+1.default parameters:
+    specify default values when expected to no arguments available.
+    which uses the logical OR (||):
+    ex:
+    var link = function (height, color, url) {
+    var height = height || 50
+    var color = color || 'red'
+    var url = url || 'http://capitalone.io'
+    ...
+    }
+
+2.Rest and Spread Parameters in ES6:
+to access an indefinite number of arguments as an array
+It’s rest parameters syntax and it’s defined with ellipses …. 
+For example, this is ES6 function signature with the rest parameter callbacks 
+which become an array with the rest of the parameters:
+
+function(url, options, ...callbacks) {
+  var callback1 = callbacks[0]
+    var callback2 = callbacks[2]
+  // ...
+}
+
+3. Template Literals in ES6:
+
+in ES6 we can use a new syntax ${NAME} inside of the back-ticked string:
+
+4. Multi-line Strings in ES6
+
+old With concatenation: it is horrible,
+var roadPoem = 'Then took the other, as just as fair,\n\t'
+    + 'And having perhaps the better claim\n\t'
+    + 'Because it was grassy and wanted wear,\n\t'
+    + 'Though as for that the passing there\n\t'
+    + 'Had worn them really about the same,\n\t'
+
+
+While in ES6, simply utilize the backticks as follows:
+var roadPoem = `Then took the other, as just as fair,
+    And having perhaps the better claim
+    Because it was grassy and wanted wear,
+    Though as for that the passing there
+    Had worn them really about the same,`
+
+5. Destructuring Assignment in ES6
+
+var body = req.body, // body has username and password
+  username = body.username,
+  password = body.password
+
+
+  In ES6, we can replace the ES5 code above with these statements:
+  var {username, password} = req.body
+
+
+
+6. Enhanced Object Literals in ES6
+
+
+7. Arrow Functions in ES6
+
+ const add = function test(a, b) {
+    return a+b;
+ }
+
+ const add = (a,b) => a + b;
+
+
+ 8. Promises in ES6
+
+const promiseFunc = (number) => new Promise((resolve,reject)=> {
+    if(number>10) {
+        resolve('Hey Succcccccccccessss')
+    } else reject('rejected')
+})
+
+promiseFunc(100).then(()=> {
+    console.log('then block success')
+}).catch(()=> {
+    console.log('catching the error')
+})

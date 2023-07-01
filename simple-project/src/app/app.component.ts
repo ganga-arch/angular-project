@@ -1,6 +1,8 @@
 import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
+import * as  string from 'tsfilestring'
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -28,15 +30,16 @@ export class AppComponent implements OnInit {
   public arr: number[] = [1,2,3,4]
   public classdata : string = 'classsData';
   public blue = 'blue';
+  public stringvalidation = string;
   constructor() {
 
   }
 
   ngOnInit(): void {
-
+    
     setTimeout(() => {
     this.classdata = 'newClass';
-      
+    console.log('ssssss', this.stringvalidation.data('ss'))
     }, 3000);
   }
 

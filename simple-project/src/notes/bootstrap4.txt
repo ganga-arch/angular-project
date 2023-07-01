@@ -1,0 +1,19 @@
+1.install the below packages
+
+        $ npm install bootstrap
+        $ npm install jquery
+
+
+2. angular.json 
+    add the path as mentioned below: 
+        "styles": [  
+            "./node_modules/bootstrap/dist/css/bootstrap.css",
+            "src/styles.css"
+        ],
+        "scripts": [               
+            "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/bootstrap/dist/js/bootstrap.min.js"
+        ]
+
+3.
+

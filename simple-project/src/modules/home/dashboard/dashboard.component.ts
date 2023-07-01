@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
-
+  public cardItemList:any = [
+    {name: 'first card',path:'/card1'},
+    {name: 'second card',path:'/card1'},
+    {name: 'third card',path:'/card1'},
+    {name: 'fourth card',path:'/card1'},
+    {name: 'fifth card',path:'/card1'},
+    {name: 'first card',path:'/card1'},
+    {name: 'second card',path:'/card1'},
+    {name: 'third card',path:'/card1'},
+  ]
   
 }
