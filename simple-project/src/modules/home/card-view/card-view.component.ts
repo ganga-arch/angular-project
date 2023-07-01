@@ -1,10 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'spi-card-view',
   templateUrl: './card-view.component.html',
   styleUrls: ['./card-view.component.scss']
 })
-export class CardViewComponent {
-  @Input() public data:any = []
+export class CardViewComponent implements OnInit{
+  @Input() public data:any;
+  public ngOnInit(): void {
+    
+  }
 }
