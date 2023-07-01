@@ -7,12 +7,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
-import { CardViewComponent } from './card-view/card-view.component';
 import {MatButtonModule} from '@angular/material/button';
+import { SharedModule } from 'src/common/components/shared/shared.module';
 @NgModule({
   declarations: [
     DashboardComponent,
-    CardViewComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +20,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatButtonModule
-  ]
+    MatButtonModule,
+    SharedModule
+  ],
+  providers:[]
 })
 export class HomeModule { }

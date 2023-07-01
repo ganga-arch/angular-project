@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="column">
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              This is the expansion title
+            </mat-panel-title>
+            <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div>
+            <spi-reactive-forms></spi-reactive-forms>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Self aware panel
+            </mat-panel-title>
+            <mat-panel-description>
+              Currently I am {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+         <div>
+          <spi-template-driven-forms></spi-template-driven-forms>
+         </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
